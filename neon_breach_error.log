@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\main.py", line 194, in run
+    self.draw()
+    ~~~~~~~~~^^
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\main.py", line 492, in draw
+    self.draw_playing()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\main.py", line 535, in draw_playing
+    draw_enemies(self.world_frame, self.enemies, self.player, depth_buffer)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\renderer.py", line 1490, in draw_enemies
+    sprite = _doom_enemy_canvas(enemy, size, neutral=neutral)
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\renderer.py", line 1398, in _doom_enemy_canvas
+    sprite = _scaled_enemy_sprite(state, tier, quantized_size).copy()
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\renderer.py", line 1367, in _scaled_enemy_sprite
+    source = _load_enemy_sprites()[state]
+             ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\renderer.py", line 1325, in _load_enemy_sprites
+    raise ValueError(f"El sprite del enemigo no tiene alfa: {asset_path}")
+ValueError: El sprite del enemigo no tiene alfa: C:\Users\jhoel\OneDrive\Desktop\proyects\doom-engine-from-scratch-main\doom-engine-from-scratch-main\assets\enemies\demon_walk_a.png

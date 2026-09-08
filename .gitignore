@@ -1,0 +1,49 @@
+__pycache__/
+.venv/
+venv/
+env/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Diagnósticos y archivos temporales locales
+*.log
+*.patch
+*.bundle
+*.zip
+
+# Archivos multimedia no incluidos en el repositorio
+videos/
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.m4a
+
+# Capturas no publicadas
+assets/previews/*
+!assets/previews/gameplay_documental.png
+
+# Versiones anteriores del fondo del menú
+assets/menu_background.png
+assets/menu_background_doom_.png
+
+# Archivos de audio opcionales
+assets/audio/*
+!assets/audio/README.md
+
+# Archivos de configuración y documentación local
+AGENTS.md
+
+# Material de producción no incluido
+etapas/
+fases/
+fases_qhd/
+guion.md
